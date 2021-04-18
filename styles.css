@@ -552,6 +552,12 @@ video {
   }
 }
 
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -782,6 +788,10 @@ video {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1145,6 +1155,10 @@ video {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .w-full {
